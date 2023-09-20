@@ -6,15 +6,23 @@
   color: #003a70;
   width: 40%;
   display: inline-block;
-  height: 106px;
+  height: auto; /* Changed from fixed height to auto to accommodate content */
+  overflow: hidden; /* Added to hide overflowing content */
+  padding: 10px; /* Added padding for spacing */
+  position: relative; /* Added for positioning */
+  margin: 10px 5%; /* Added for spacing between cards */
 }
 
 .PokemonCard img {
   align-self: start;
+  max-width: 100%; /* Ensure image doesn't overflow card */
+  object-fit: contain; /* Image will scale correctly */
+  margin-right: 10px; /* Spacing between image and details */
 }
 
 .PokemonCard-front {
   display: flex;
+  align-items: center; /* Align items vertically centered */
 }
 
 .PokemonCard-back {
