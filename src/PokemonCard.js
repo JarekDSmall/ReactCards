@@ -1,5 +1,5 @@
 import React from "react";
-import backOfCard from "./back.png";
+import backOfCard from "./Pokemoncardback.jpeg";
 import "./PokemonCard.css";
 import { useFlip } from "./hooks";  // Import the useFlip hook
 
